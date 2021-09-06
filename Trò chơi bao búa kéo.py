@@ -19,7 +19,6 @@ while True:
         print("Máy tính: ",maytinh)
 
         print("\n{:-^20}".format("Kết quả"))
-
         #So sánh
         if me==maytinhdoanso:
             print("Hòa")
@@ -33,3 +32,4 @@ while True:
             break
         elif  a==" ":
             continue
+        
