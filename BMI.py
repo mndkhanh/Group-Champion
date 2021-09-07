@@ -18,14 +18,15 @@ def bmiss(a):
         return("Your body is Grade II obesity")
     elif a ==40:
         return("Your body is Grade III obesity")
-def biend(d=float(input("weigh (kg): "))):
+print("If you are an infant, you do not need to enter your height and your weight!")
+def biend(d=map(float,input("weight (kg): "))):
     return d
-def bienb(b=float(input("Heigh (m) : "))):
+def bienb(b=map(float,input("Height (m) : "))):
     return b
 #Caculator
 if age <= 1:
     cnss = float(input("Birth weight (kg) : "))
-    stt = float(input("Number of months old : "))
+    stt = int(input("Number of months old : "))
     if stt<=6:
         Infant=cnss + (stt*0.6)
         print(f"Your ideal weight is : {Infant} kg ")
