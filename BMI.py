@@ -19,10 +19,6 @@ def bmiss(a):
     elif a ==40:
         return("Your body is Grade III obesity")
 print("If you are an infant, you do not need to enter your height and your weight!")
-# def biend(d=map(float,input("weight (kg): "))):
-#     return d
-# def bienb(b=map(float,input("Height (m) : "))):
-#     return b
 #Caculator
 if age <= 1:
     cnss = float(input("Birth weight (kg) : "))
