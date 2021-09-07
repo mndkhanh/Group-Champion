@@ -19,10 +19,10 @@ def bmiss(a):
     elif a ==40:
         return("Your body is Grade III obesity")
 print("If you are an infant, you do not need to enter your height and your weight!")
-def biend(d=map(float,input("weight (kg): "))):
-    return d
-def bienb(b=map(float,input("Height (m) : "))):
-    return b
+# def biend(d=map(float,input("weight (kg): "))):
+#     return d
+# def bienb(b=map(float,input("Height (m) : "))):
+#     return b
 #Caculator
 if age <= 1:
     cnss = float(input("Birth weight (kg) : "))
@@ -34,8 +34,8 @@ if age <= 1:
         baby =cnss+3.6+(0.5*stt)
         print(f"Your ideal weight is : {baby} kg")
 elif 2 <= age <=16:
-    w= biend
-    h= bienb
+    w= float(input("weight (kg): "))
+    h= float(input("Height (m) : "))
     #Công thức chri số lượng cơ thể (BMI)
     bmi1 =bmi(w,h)
     print(f"Your BMI : {bmi1}")
@@ -44,10 +44,10 @@ elif 2 <= age <=16:
     treem=bmiss(bmi1)
     print(treem)
 elif age >16:
-    w= biend
-    h= bienb
+    w= float(input("weight (kg): "))
+    h= float(input("Height (m) : "))
     #Công thức tính cân nặng lý tưởng(KG)
-    cnlt=50+0.75((h*1000)-150)
+    cnlt=50+0.75*((h*1000)-150)
     print(f"Your ideal weight is : {cnlt} kg ")
     #Công thức chri số lượng cơ thể (BMI)
     bmi2= bmi(w,h)
