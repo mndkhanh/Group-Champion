@@ -1,0 +1,27 @@
+using namespace std;
+#include <iostream>
+
+int main()
+{
+    float W;
+    float H;
+
+    cout << "This is a tool helping u out to check ur body's situation.\nPlease type ur Weight and Height:\n\nWeight (kg) = ";
+    cin >> W;
+    cout << "Height (m) = ";
+    cin >> H;
+    float BMI = W / (H * H);
+    cout << "\n\n\n\n" << "Your BMI is at " << BMI << ", your body's situation is ";
+
+    if (BMI <= 18.5)
+        cout << "thin\n\n";
+    else if (BMI > 18.5 && BMI <= 25)
+        cout << "normal\n\n";
+    else if (BMI > 25 && BMI <= 30)
+        cout << "overweight\n\n";
+    else if (BMI > 30)
+        cout << "obese\n\n";
+    else
+        cout << "Pls check your data which was typed!!\n\n";
+}
+
